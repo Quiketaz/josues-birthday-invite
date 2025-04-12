@@ -1,45 +1,75 @@
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    background-image: url('images/soccer_field_background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    padding: 20px;
-  }
-  .invite {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  h1 {
-    color: #FFD700;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  }
-  p {
-    line-height: 1.6;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  }
-  .details {
-    margin-top: 20px;
-  }
-  .rsvp {
-    margin-top: 30px;
-    font-weight: bold;
-    color: #90EE90;
-  }
-  .soccer-icon {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-image: url('images/soccer_field_background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  padding: 20px;
+}
+
+.invite {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+  margin: 10px auto;
+  border: 2px solid #FFD700; /* Gold border */
+}
+
+h1 {
+  color: #FFD700;
+  font-size: 2em; /* Larger heading */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: 'Arial Black', sans-serif; /* Playful font */
+}
+
+p {
+  line-height: 1.4;
+  font-size: 1.1em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.rsvp {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.soccer-icon {
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.large-icon {
     font-size: 3em;
-    margin-bottom: 10px;
-    color: white;
-  }
-  .soccer-border {
-    border: 5px solid white;
-    padding: 20px;
-    border-radius: 20px;
-  }
+}
+
+a {
+  color: #90EE90;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.map-button, .whatsapp-button {
+  background-color: #008000; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.map-button:hover, .whatsapp-button:hover {
+  background-color: #006400; /* Darker green on hover */
+}
