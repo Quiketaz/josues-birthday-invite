@@ -1,88 +1,103 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: sans-serif;
   text-align: center;
   background-image: url('images/soccer_field_background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
-  padding: 20px;
+  padding: 0; /* Remove body padding */
+  margin: 0; /* Remove body margin */
+}
+
+.invite-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .invite {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 10px;
-  max-width: 90%;
-  margin: 10px auto;
-  border: 2px solid #FFD700; /* Gold border */
+  max-width: 95%; /* Adjust max-width */
+  width: 90%; /* Adjust width */
+  border: 2px solid #FFD700;
+  box-sizing: border-box; /* Include padding and border in width */
 }
 
 h1 {
   color: #FFD700;
-  font-size: 2em; /* Larger heading */
-  margin-bottom: 10px;
+  font-size: 2em; /* Adjust font-size */
+  font-family: 'Arial Black', sans-serif;
+  margin-bottom: 10px; /* Adjust margin-bottom */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-  font-family: 'Arial Black', sans-serif; /* Playful font */
-}
-
-p {
-  line-height: 1.4;
-  font-size: 1.1em;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-}
-
-.details {
-  margin-top: 10px;
-}
-
-.rsvp {
-  margin-top: 20px;
-  font-weight: bold;
-}
-
-.soccer-icon {
-  font-size: 2em;
-  margin-bottom: 5px;
-  color: white;
-}
-
-.large-icon {
-    font-size: 3em;
-}
-
-a {
-  color: #90EE90;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.map-button, .whatsapp-button {
-  background-color: #008000; /* Green background */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-.map-button:hover, .whatsapp-button:hover {
-  background-color: #006400; /* Darker green on hover */
 }
 
 .josue-photo {
-  width: 150px; /* Adjust size as needed */
-  border-radius: 50%; /* Make it circular */
-  margin: 10px auto;
+  width: 50%; /* Adjust width */
+  max-width: 150px; /* Add max-width */
+  border-radius: 50%;
+  margin: 10px auto; /* Adjust margin */
   display: block;
 }
 
-ul{
-    text-align: left;
-    max-width: 400px;
-    margin: 0 auto;
+.invite-text,
+.event-details {
+  font-size: 1em; /* Adjust font-size */
+  line-height: 1.4; /* Adjust line-height */
+  margin-bottom: 10px; /* Adjust margin-bottom */
+}
+
+.map-button,
+.whatsapp-button {
+  background-color: #008000;
+  color: white;
+  padding: 8px 16px; /* Adjust padding */
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px; /* Adjust margin-top */
+  display: inline-block;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 80%; /* Add width */
+  max-width: 200px; /* Add max-width */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.map-button:hover,
+.whatsapp-button:hover {
+  background-color: #006400;
+}
+
+.location-details,
+.rsvp-details {
+  margin-top: 15px; /* Adjust margin-top */
+}
+
+.calendar-button-container {
+  margin-top: 15px; /* Adjust margin-top */
+  text-align: center; /* Center the button */
+}
+
+img[alt="Add to Google Calendar"] {
+  display: inline-block; /* Display inline-block */
+  vertical-align: middle; /* Vertical align middle */
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5em; /* Adjust font-size */
+  }
+
+  .josue-photo {
+      width: 40%; /* Adjust width */
+      max-width: 120px; /* Adjust max-width */
+  }
+
+  .invite-text,
+  .event-details {
+      font-size: 0.9em; /* Adjust font-size */
+  }
 }
