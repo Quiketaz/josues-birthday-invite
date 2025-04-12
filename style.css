@@ -73,3 +73,16 @@ a:hover {
 .map-button:hover, .whatsapp-button:hover {
   background-color: #006400; /* Darker green on hover */
 }
+
+.josue-photo {
+  width: 150px; /* Adjust size as needed */
+  border-radius: 50%; /* Make it circular */
+  margin: 10px auto;
+  display: block;
+}
+
+ul{
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
