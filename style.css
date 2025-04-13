@@ -1,13 +1,13 @@
 body {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   background-image: url('images/soccer_field_background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
-  padding: 0; /* Remove body padding */
-  margin: 0; /* Remove body margin */
+  padding: 0;
+  margin: 0;
 }
 
 .invite-container {
@@ -19,85 +19,129 @@ body {
 
 .invite {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 95%; /* Adjust max-width */
-  width: 90%; /* Adjust width */
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 90%;
   border: 2px solid #FFD700;
-  box-sizing: border-box; /* Include padding and border in width */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
-h1 {
+.header-section {
+  margin-bottom: 20px;
+}
+
+.invite-title {
   color: #FFD700;
-  font-size: 2em; /* Adjust font-size */
-  font-family: 'Arial Black', sans-serif;
-  margin-bottom: 10px; /* Adjust margin-bottom */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-size: 2.2em;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-.josue-photo {
-  width: 50%; /* Adjust width */
-  max-width: 150px; /* Add max-width */
-  border-radius: 50%;
-  margin: 10px auto; /* Adjust margin */
-  display: block;
+.invite-image {
+  width: 60%;
+  max-width: 180px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.invite-text,
+.invite-text {
+  font-size: 1.1em;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.event-details-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.event-details-section h2 {
+  font-size: 1.3em;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
 .event-details {
-  font-size: 1em; /* Adjust font-size */
-  line-height: 1.4; /* Adjust line-height */
-  margin-bottom: 10px; /* Adjust margin-bottom */
+  font-size: 1em;
+  margin-bottom: 10px;
 }
 
-.map-button,
-.whatsapp-button {
+.map-link {
   background-color: #008000;
   color: white;
-  padding: 8px 16px; /* Adjust padding */
+  padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
-  margin-top: 10px; /* Adjust margin-top */
-  display: inline-block;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  width: 80%; /* Add width */
-  max-width: 200px; /* Add max-width */
-  box-sizing: border-box; /* Include padding in width */
+  display: inline-block;
+  width: 80%;
+  max-width: 200px;
+  box-sizing: border-box;
 }
 
-.map-button:hover,
-.whatsapp-button:hover {
+.map-link:hover {
   background-color: #006400;
 }
 
-.location-details,
-.rsvp-details {
-  margin-top: 15px; /* Adjust margin-top */
+.rsvp-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-.calendar-button-container {
-  margin-top: 15px; /* Adjust margin-top */
-  text-align: center; /* Center the button */
+.rsvp-section h2 {
+  font-size: 1.3em;
+  color: #90EE90; /* A different color for emphasis */
+  margin-bottom: 10px;
 }
 
-img[alt="Add to Google Calendar"] {
-  display: inline-block; /* Display inline-block */
-  vertical-align: middle; /* Vertical align middle */
+.whatsapp-button {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  width: 80%;
+  max-width: 200px;
+  box-sizing: border-box;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; /* Darker WhatsApp green */
+}
+
+.calendar-section {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.calendar-link {
+  display: inline-block;
 }
 
 @media (max-width: 480px) {
-  h1 {
-      font-size: 1.5em; /* Adjust font-size */
+  .invite-title {
+      font-size: 1.8em;
   }
 
-  .josue-photo {
-      width: 40%; /* Adjust width */
-      max-width: 120px; /* Adjust max-width */
+  .invite-image {
+      width: 70%;
+      max-width: 150px;
   }
 
-  .invite-text,
-  .event-details {
-      font-size: 0.9em; /* Adjust font-size */
+  .invite-text {
+      font-size: 1em;
   }
 }
