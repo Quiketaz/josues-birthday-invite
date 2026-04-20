@@ -95,10 +95,11 @@ body {
 
 .script-name {
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(1.2rem, 5vw, 1.8rem);
+  font-size: clamp(2.2rem, 9vw, 4rem);
   font-weight: 400;
   color: #8ec5ff;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
+  line-height: 0.95;
 }
 
 .marquee-number {
