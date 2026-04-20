@@ -63,8 +63,8 @@ body {
       #0a0905 100%);
   padding: 20px 20px;
   border-radius: 20px;
-  max-width: 540px;
   width: 100%;
+  max-width: 600px;
   height: 100%;
   max-height: 100vh;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -95,7 +95,7 @@ body {
 
 .script-name {
   font-family: 'Great Vibes', cursive;
-  font-size: 1.2em;
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
   font-weight: 400;
   color: #8ec5ff;
   letter-spacing: 0.04em;
@@ -110,6 +110,14 @@ body {
   max-width: 360px;
   margin: 0 auto 6px;
   min-height: 60px;
+  max-width: 100%;
+  height: auto;
+}
+
+.invite-image,
+.marquee-number {
+  max-width: 100%;
+  height: auto;
 }
 
 .marquee-number::before {
@@ -227,6 +235,7 @@ body {
   border: 1px solid rgba(199, 168, 93, 0.12);
   border-radius: 14px;
   padding: 12px 16px;
+  width: 100%;
   margin-bottom: 12px;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -249,6 +258,7 @@ body {
 
 .details-grid {
   display: block;
+  width: 100%;
   margin-bottom: 12px;
 }
 
@@ -585,6 +595,12 @@ body {
   }
 
   .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .details-grid {
     display: flex;
     flex-direction: column;
     gap: 12px;
